@@ -1,11 +1,12 @@
 ; ------------------------------------------------------------------------------
 ;	Lesson 2 - Game Logic for extra lives
 ;		-the two memory storage locations are completely arbitrary for this
-;		-takes the value provided to the opcode and adds to value in register A
+;		-
 ; ------------------------------------------------------------------------------
 ; We initialize two "variables" with zero and three.
 ; We will use memory locations $00:0000 and $00:0001
 ; 	to store the number of coins and lives
+
 	lda #$00		; load register A with zero
 	sta $0000	; and store it to memory
 	lda #$03		; load register A with three
